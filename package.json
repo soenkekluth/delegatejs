@@ -1,0 +1,24 @@
+{
+  "name": "delegatejs",
+  "version": "1.0.0",
+  "description": "simple function delegation like jQuery.proxy()",
+  "main": "delegate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soenkekluth/delegatejs.git"
+  },
+  "keywords": [
+    "delegate",
+    "function",
+    "proxy"
+  ],
+  "author": "Sönke Kluth <soenke.kluth@gmail.com> (http://soenkekluth.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/delegatejs/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/delegatejs"
+}
