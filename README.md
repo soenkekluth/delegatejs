@@ -7,7 +7,7 @@ simple function delegation like jQuery.proxy()
 
 var delegate = require('./delegatejs');
 
-var myClass = function() {
+var MyClass = function() {
 
     this.str = 'I am doing';
     this.doSomething = function(what) {
@@ -16,7 +16,7 @@ var myClass = function() {
 
 };
 
-var myObj = new myClass();
+var myObj = new MyClass();
 
 setTimeout(delegate(myObj, myObj.doSomething, 'delegation'), 100);
 
