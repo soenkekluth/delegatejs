@@ -23,7 +23,7 @@ var MyClass = function() {
 
 var myObj = new MyClass();
 
-setTimeout(delegate(myObj, myObj.doSomething, 'delegation'), 100);
+setTimeout(delegate(myObj, myObj.doSomething, 'delegation'), 100); // 'I am doing delegation'
 
 
 
