@@ -2,10 +2,15 @@
 
 simple function delegation like jQuery.proxy()
 
+```
+npm install delegatejs
+```
+
+
 ```js
 
 
-var delegate = require('./delegatejs');
+var delegate = require('delegatejs');
 
 var MyClass = function() {
 
