@@ -1,10 +1,10 @@
 {
   "name": "delegatejs",
-  "version": "1.0.1",
-  "description": "simple function delegation like jQuery.proxy()",
-  "main": "delegate.js",
+  "version": "1.1.0",
+  "description": "simple function delegation like jQuery.proxy() or Function.bind",
+  "main": "src/delegate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   "keywords": [
     "delegate",
     "function",
+    "bind",
     "proxy"
   ],
   "author": "Sönke Kluth <soenke.kluth@gmail.com> (http://soenkekluth.com/)",
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/soenkekluth/delegatejs/issues"
   },
-  "homepage": "https://github.com/soenkekluth/delegatejs"
+  "homepage": "https://github.com/soenkekluth/delegatejs",
+  "devDependencies": {
+    "mocha": "3.0.2",
+    "should": "11.1.0"
+  }
 }
