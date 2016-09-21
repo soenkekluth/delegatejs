@@ -1,6 +1,6 @@
 # DelegateJS
 
-simple function delegation like jQuery.proxy()
+performant object scope function [event] delegation like function.bind or jquery.proxy
 
 ```
 npm install delegatejs
@@ -9,22 +9,18 @@ npm install delegatejs
 
 ```js
 
-
 var delegate = require('delegatejs');
 
-var MyClass = function() {
+class Test {
+    
+  constructor() {
+    window.addEventListener('resize', delegate(this, this.onResize), false);
+  }
+  
+  onResize(e) {
+    console.log(this, e);
+  }
 
-    this.str = 'I am doing';
-    this.doSomething = function(what) {
-        console.log(this.str + ' ' + what);
-    };
-
-};
-
-var myObj = new MyClass();
-
-setTimeout(delegate(myObj, myObj.doSomething, 'delegation'), 100); // 'I am doing delegation'
-
-
+}
 
 ```
