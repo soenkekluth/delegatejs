@@ -1,5 +1,7 @@
 # DelegateJS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soenkekluth/delegatejs.svg)](https://greenkeeper.io/)
+
 performant object scope function [event] delegation like function.bind or jquery.proxy
 
 ## Install
